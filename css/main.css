@@ -1,0 +1,32 @@
+body {
+  font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.hero-section {
+  /* Yer tutucu hero görseli */
+  background-image: linear-gradient(
+      to right,
+      rgba(23, 37, 84, 0.8),
+      rgba(153, 27, 27, 0.5)
+    ),
+    url("https://placehold.co/1920x1080");
+  background-size: cover;
+  background-position: center;
+}
+
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.scroll-reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.header-scrolled {
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+}
